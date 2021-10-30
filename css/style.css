@@ -2106,10 +2106,16 @@ body.lock {
    border-radius: 50%;
    transition: all .2s ease;
    overflow: hidden;
+   width: 100%;
+   max-width: 200px;
+   max-height: 200px;
 }
 
 .member-team-photo>img {
+   max-width: 200px;
+   max-height: 200px;
    width: 100%;
+   object-fit: contain;
 }
 
 .member-team-photo.active {
@@ -2427,7 +2433,9 @@ body.lock {
    left: 50%!important;
    transform: translateX(-50%);
 }
-
+.swiper-slide-cou:last-child{
+   margin-right: 20px;
+}
 .s6__text p {
    margin-bottom: 8px;
 }
